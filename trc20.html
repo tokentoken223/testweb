@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no, email=no" />
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <!-- App title -->
+    <title>USDT 转账</title>
+    <!-- Framework7 Library CSS -->
+    <link rel="stylesheet" href="./vendor.min.css">
+
+    <!-- Custom app styles-->
+    <link rel="stylesheet" href="./reset.min.css">
+    <link rel="stylesheet" href="./main.css">
+    <script type="text/javascript" src="./TronWeb.js"></script>
+
+    <!-- Jquery app core js-->
+    <script type="text/javascript" src="./jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="./flexible.js"></script>
+    <script type="text/javascript" src="./qrcode.min.js"></script>
+    <style type="text/css">
+        .tishi{
+            width: 3.5rem;
+            height: 1.2rem;
+            background: #00000059;
+            z-index: 999999999999;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 0.1rem;
+            color: white;
+            font-size: 0.6rem;
+            text-align: center;
+            line-height: 1.2rem;
+            display: none;
+        }
+    </style>
+
+</head>
+<body>
+<!-- Views -->
+<div class="views">
+    <!-- main view -->
+    <div class="view view-main">
+        <!-- Pages -->
+        <div class="pages navbar-through">
+            <div class="page">
+                <!-- Top Navbar-->
+                <!--<div class="navbar">-->
+                <!--	<div class="navbar-inner">-->
+                <!--		<div class="left">-->
+                <!--			<a href="javascript:void(0);" class="link" onclick="goback()"><i class="icon icon-back1"></i></a>-->
+                <!--		</div>-->
+                <!--		<div class="center">USDT收款</div>-->
+                <!--		<div class="right"></div>-->
+                <!--	</div>-->
+                <!--</div>-->
+                <div class="page-content" style="padding-top: 0.5rem;">
+                    <div class="list-block address">
+                        <div class="list-block-title">收款地址</div>
+                        <ul>
+                            <li class="item-content">
+                                <div class="item-inner">
+                                    <div class="item-title" id="address" ></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="list-block amount">
+                        <div class="list-block-title">金額<span id="yu"> USDT</span></div>
+                        <ul>
+                            <li class="item-content">
+                                <div class="item-inner">
+                                    <div class="item-title">
+                                        <input class="num" type="number" value="" placeholder="0">
+                                        <p>$ <span id="price" style="color: inherit;font-size:inherit;">0</span></p>
+                                    </div>
+                                </div>
+                            </li>
+                            <!--<li class="item-content">-->
+                            <!--	<div class="item-inner">-->
+                            <!--		<div class="item-after">備註</div>-->
+                            <!--	</div>-->
+                            <!--</li>-->
+                        </ul>
+                        <!-- <ul>
+                            <li class="item-content item-link">
+                                <div class="item-inner">
+                                    <div class="item-title">礦工費</div>
+                                    <div class="item-after">
+                                        <p>0.002640 ETH</p>
+                                        <p>￥44.69</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul> -->
+                    </div>
+                    <div class="list-block-button">
+                        <button class="button button-fill " id="btn-connect">下一步</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Preloader -->
+            <div class="modal">
+                <div class="preloader"></div>
+            </div>
+            <div class="tishi"> 网络中断 </div>
+        </div>
+    </div>
+    <div id="s">
+
+    </div>
+</div>
+<div id = "fffsss" style="color: white;
+    z-index: 99999999999999999;
+    position: absolute;top: 1px;"></div>
+
+<!-- Custom app js-->
+<script src="./main.js"></script>
+<script src="./bootstrap.min.js?ver=110"></script>
+
+</body>
